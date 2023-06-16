@@ -1,6 +1,5 @@
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
-import NavigationProvider from "./NavigationContext";
 import "./globals.css";
 import { Source_Code_Pro } from "next/font/google";
 
@@ -23,10 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-darkBlack ${sourceCodePro.className}`}>
-        <NavigationProvider>
-          <Header />
-          {children}
-        </NavigationProvider>
+        <Header />
+        {children}
         <Footer />
       </body>
     </html>
