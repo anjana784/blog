@@ -8,13 +8,13 @@ import Blog from "./Components/Blog";
 
 const Main: FC = () => {
   return (
-    <main className="bg-lightBlack w-[70%] rounded-md m-auto">
-      <Home />
-      <About />
-      <Resume />
-      <Projects />
-      <Contact />
-      <Blog />
+    <main className="bg-lightBlack w-[70%] rounded-md m-auto my-4">
+      <Home></Home>
+      <About></About>
+      <Resume></Resume>
+      <Projects></Projects>
+      <Contact></Contact>
+      <Blog></Blog>
     </main>
   );
 };

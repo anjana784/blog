@@ -9,6 +9,8 @@ import {
 
 export const NavigationContext = createContext(
   {} as {
+    sections: HTMLDivElement[];
+    setSections: Dispatch<SetStateAction<HTMLDivElement[]>>;
     currentSection:
       | "home"
       | "about"
@@ -25,12 +27,16 @@ export const NavigationContext = createContext(
 );
 
 const NavigationProvider = ({ children }: { children: ReactNode }) => {
+  const [sections, setSections] = useState<HTMLDivElement[]>([]);
+
   const [currentSection, setCurrentSection] = useState<
     "home" | "about" | "resume" | "projects" | "contact" | "blog"
   >("home");
 
   return (
-    <NavigationContext.Provider value={{ currentSection, setCurrentSection }}>
+    <NavigationContext.Provider
+      value={{ currentSection, setCurrentSection, sections, setSections }}
+    >
       {children}
     </NavigationContext.Provider>
   );
