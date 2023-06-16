@@ -2,9 +2,13 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import NavigationProvider from "./NavigationContext";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Source_Code_Pro } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const sourceCodePro = Source_Code_Pro({
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin-ext"],
+});
 
 export const metadata = {
   title: "anjana784",
@@ -18,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-darkBlack">
+      <body className={`bg-darkBlack ${sourceCodePro.className}`}>
         <NavigationProvider>
           <Header />
           {children}
