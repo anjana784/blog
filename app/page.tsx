@@ -19,19 +19,22 @@ const Main: FC = () => {
 
   // instanciate a new IntersectionObserver and return using the useMemo
   const observer = useMemo(() => {
-    return new IntersectionObserver((entries) => {
-      entries.forEach(
-        (entry) => {
+    return new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // setHeaderShowing
           if (entry.target.id === "header") {
             setHeaderShowing(entry.isIntersecting);
+          } else if (entry.isIntersecting) {
+            setCurrentSectionName(entry.target.id);
           }
-        },
-        {
-          threshold: 1,
-        }
-      );
-    });
-  }, [setHeaderShowing]);
+        });
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+  }, [setCurrentSectionName, setHeaderShowing]);
 
   // obserce the sections
   useEffect(() => {
@@ -41,6 +44,10 @@ const Main: FC = () => {
       });
     }
   }, [observer, sections]);
+
+  useEffect(() => {
+    console.log(currentSectionName);
+  }, [currentSectionName]);
 
   return (
     <main className="bg-lightBlack w-[70%] rounded-md m-auto my-4">
