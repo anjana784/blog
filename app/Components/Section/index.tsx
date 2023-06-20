@@ -1,5 +1,5 @@
 "use client";
-import { FC, ReactNode, useContext, useEffect, useRef } from "react";
+import { FC, ReactNode, useEffect, useRef } from "react";
 import SectionTitile from "../SectionTitle";
 import SectionContent from "../SectionContent";
 import useStore from "@/app/Store";
@@ -22,7 +22,7 @@ const Section: FC<Props> = ({ title, children, id }) => {
   }, [setSections]);
 
   return (
-    <section className="h-[700px]" id={id} ref={section}>
+    <section className="h-[700px] pt-[110px]" id={id} ref={section}>
       {title && <SectionTitile title={title} />}
       <SectionContent>{children}</SectionContent>
     </section>

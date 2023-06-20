@@ -4,7 +4,7 @@ import { FC, useEffect, useRef } from "react";
 
 const Footer: FC = () => {
   return (
-    <footer id="footer" className="w-screen h-[200px] bg-lightBlack"></footer>
+    <footer id="footer" className="w-screen h-[100px] bg-lightBlack"></footer>
   );
 };
 
