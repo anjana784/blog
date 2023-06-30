@@ -1,5 +1,5 @@
 "use client";
-import { FC, useEffect, useMemo } from "react";
+import { FC, useEffect, useRef } from "react";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Resume from "./Components/Resume";
@@ -17,9 +17,11 @@ const Main: FC = () => {
     currentSectionName,
   } = useStore((state) => state);
 
-  // instanciate a new IntersectionObserver and return using the useMemo
-  const observer = useMemo(() => {
-    return new IntersectionObserver(
+  const observer = useRef<IntersectionObserver | null>(null);
+
+  // obserce the sections
+  useEffect(() => {
+    observer.current = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           // setHeaderShowing
@@ -34,23 +36,28 @@ const Main: FC = () => {
         threshold: 0.5,
       }
     );
-  }, [setCurrentSectionName, setHeaderShowing]);
 
-  // obserce the sections
-  useEffect(() => {
     if (sections.length > 0) {
       sections.forEach((section) => {
-        observer.observe(section);
+        observer.current?.observe(section);
       });
     }
-  }, [observer, sections]);
+
+    return () => {
+      if (observer.current) {
+        sections.forEach((section) => {
+          observer.current?.unobserve(section);
+        });
+      }
+    };
+  }, [sections, setCurrentSectionName, setHeaderShowing]);
 
   useEffect(() => {
     console.log(currentSectionName);
   }, [currentSectionName]);
 
   return (
-    <main className="bg-lightBlack w-[70%] rounded-md m-auto my-4">
+    <main className="bg-lightBlack w-[70%] max-lg:w-[75%] max-md:w-[80%] rounded-md m-auto my-4">
       <Home />
       <About />
       <Resume />

@@ -10,13 +10,12 @@ module.exports = {
       darkBlack: '#1C1E21',
       lightBlack: '#242526',
       primaryGold: '#F2AE1B',
-      primaryWhite: '#D3D3D3'
+      primaryWhite: '#D3D3D3',
+      customGray: '#393939'
     },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'profile': "url('/public/images/profile.svg')",
       },
     },
   },

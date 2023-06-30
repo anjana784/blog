@@ -3,23 +3,17 @@ import useStore from "@/app/Store";
 import Link from "next/link";
 import { FC, useEffect, useRef, useState } from "react";
 import NavItem from "../NavItem";
-// import Image from "next/image";
+import Image from "next/image";
 import profileImg from "@/public/images/profile.svg";
 
 const Header: FC = () => {
   // declare the header section with useRef
   const headerSection = useRef<HTMLDivElement>(null);
 
-  const [currntSection, setCurrentSection] = useState("");
-
   // get secSection and headerShowing from the state
   const { setSections, headerShowing, currentSectionName } = useStore(
     (state) => state
   );
-
-  useEffect(() => {
-    setCurrentSection(currentSectionName);
-  }, [currentSectionName]);
 
   // push the headerSection into sections
   useEffect(() => {
@@ -33,21 +27,33 @@ const Header: FC = () => {
       {/* main header */}
       <header
         id="header"
-        className={`w-screen h-[200px] bg-lightBlack `}
+        className={`w-screen h-[200px] max-lg:h-[150px] max-md:h-[100px] bg-lightBlack `}
         ref={headerSection}
       >
-        <div className="w-[70%] h-full m-auto">
+        <div className="w-[70%] max-lg:w-[70%] max-md:w-[80%] h-full m-auto">
           {/* logo section */}
           <div className="w-full h-[80%]">
             <div className="w-full h-full flex">
               <div className="w-[20%] h-full">
                 <div className="w-full h-full flex justify-center items-center">
-                  <div className="w-32 h-32 bg-[#393737] rounded-full"></div>
+                  <div className="w-32 h-32 max-lg:w-28 max-lg:h-28 max-md:w-16 max-md:h-16 bg-customGray rounded-full">
+                    <div
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        backgroundImage: `url(/images/profile.svg)`,
+                        backgroundSize: "cover",
+                        borderRadius: "50%",
+                      }}
+                    ></div>
+                  </div>
                 </div>
               </div>
               <div className="w-[84%] h-full">
                 <div className="w-full h-full flex items-center">
-                  <p className="text-primaryGold text-5xl px-4">anjana784</p>
+                  <p className="text-primaryGold text-5xl max-lg:text-4xl px-4 max-lg:px-3 max-md:text-2xl max-md:px-0">
+                    anjana784
+                  </p>
                 </div>
               </div>
             </div>
@@ -55,8 +61,8 @@ const Header: FC = () => {
           {/* Nav Bar section */}
           <nav className="w-full h-[20%]">
             <div className="w-full h-full flex">
-              <div className="w-[16%] h-full"></div>
-              <div className="w-[84%] h-full">
+              <div className="w-[16%] h-full max-md:hidden"></div>
+              <div className="w-[84%] h-full max-md:px-3">
                 <div className="w-full h-full flex">
                   <NavItem
                     item="home"
@@ -91,17 +97,29 @@ const Header: FC = () => {
 
       {/* skicky header */}
       {!headerShowing && (
-        <header className="w-screen h-[100px] bg-lightBlack fixed top-0 left-0">
-          <div className="w-[70%] h-full m-auto">
-            <nav className="w-full h-full">
+        <header className="w-screen h-[100px] max-lg:h-[75px] max-md:[50px] bg-lightBlack fixed top-0 left-0">
+          <div className="w-[70%] max-lg:w-[75%] max-md:[80%] h-full m-auto">
+            <div className="w-full h-full">
               <div className="w-full h-full flex">
+                {/* logo section */}
                 <div className="w-[16%] h-full">
                   <div className="w-full h-full flex justify-center items-center">
-                    <div className="w-16 h-16 bg-[#393737] rounded-full"></div>
+                    <div className="w-16 h-16 max-lg:w-14 max-lg:h-14 max-md:w-12 max-md:h-12 bg-[#393737] rounded-full">
+                      <div
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          backgroundImage: `url(/images/profile.svg)`,
+                          backgroundSize: "cover",
+                          borderRadius: "50%",
+                        }}
+                      ></div>
+                    </div>
                   </div>
                 </div>
+                {/* navbar section */}
                 <div className="w-[84%] h-full">
-                  <div className="w-full flex items-end h-full">
+                  <nav className="w-full flex items-end h-full">
                     <NavItem
                       item="home"
                       currentSectionName={currentSectionName}
@@ -126,10 +144,10 @@ const Header: FC = () => {
                       item="blog"
                       currentSectionName={currentSectionName}
                     />
-                  </div>
+                  </nav>
                 </div>
               </div>
-            </nav>
+            </div>
           </div>
         </header>
       )}

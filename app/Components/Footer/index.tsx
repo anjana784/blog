@@ -1,6 +1,4 @@
-"use client";
-import useStore from "@/app/Store";
-import { FC, useEffect, useRef } from "react";
+import { FC } from "react";
 
 const Footer: FC = () => {
   return (
