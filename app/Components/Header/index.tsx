@@ -1,10 +1,7 @@
 "use client";
 import useStore from "@/app/Store";
-import Link from "next/link";
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, useEffect, useRef } from "react";
 import NavItem from "../NavItem";
-import Image from "next/image";
-import profileImg from "@/public/images/profile.svg";
 
 const Header: FC = () => {
   // declare the header section with useRef
@@ -104,7 +101,7 @@ const Header: FC = () => {
                 {/* logo section */}
                 <div className="w-[16%] h-full">
                   <div className="w-full h-full flex justify-center items-center">
-                    <div className="w-16 h-16 max-lg:w-14 max-lg:h-14 max-md:w-12 max-md:h-12 bg-[#393737] rounded-full">
+                    <div className="w-20 h-20 max-lg:w-14 max-lg:h-14 max-md:w-12 max-md:h-12 bg-[#393737] rounded-full">
                       <div
                         style={{
                           width: "100%",
