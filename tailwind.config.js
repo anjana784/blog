@@ -18,7 +18,7 @@ module.exports = {
         'profile': "url('/public/images/profile.svg')",
       },
       screens: {
-        'xsm': '400px',
+        'xsm': '300px',
       }
     },
   },
