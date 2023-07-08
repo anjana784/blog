@@ -1,10 +1,13 @@
 "use client";
-import useStore from "@/app/Store";
 import Section from "../Section";
-import { FC, useEffect } from "react";
+import { FC } from "react";
 
 const Home: FC = () => {
-  return <Section id="home"></Section>;
+  return (
+    <Section id="home">
+      {/* <div className="w-full h-[500px] flex justify-center items-center bg-primaryGold"></div> */}
+    </Section>
+  );
 };
 
 export default Home;
