@@ -33,7 +33,7 @@ const Header: FC = () => {
             <div className="w-full h-full flex">
               <div className="w-[16%] h-full">
                 <div className="w-full h-full flex justify-center items-center">
-                  <div className="w-32 h-32 2xl:w-32 2xl:h-32 xl:w-28 xl:h-28 lg:w-24 lg:h-24 md:w-20 md:h-20 sm:w-16 sm:h-16 bg-customGray rounded-full">
+                  <div className="w-32 h-32 2xl:w-32 2xl:h-32 xl:w-28 xl:h-28 lg:w-24 lg:h-24 md:w-20 md:h-20 sm:w-16 sm:h-16 xsm:w-12 xsm:h-12 bg-customGray rounded-full">
                     <div
                       style={{
                         width: "100%",
