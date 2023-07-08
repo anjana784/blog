@@ -56,35 +56,35 @@ const Header: FC = () => {
             </div>
           </div>
           {/* Nav Bar section */}
-          <nav className="w-full h-[20%] 2xl:p-0 xl:p-0 lg:p-0 md:pl-4 sm:pl-4">
+          <nav className="w-full h-[20%] 2xl:p-0 xl:p-0 lg:p-0 md:pl-4 sm:pl-4 xsm:pl-4">
             <div className="w-full h-full flex">
-              <div className="w-[16%] h-full 2xl:block xl:block lg:block md:hidden sm:hidden"></div>
+              <div className="w-[16%] h-full 2xl:block xl:block lg:block md:hidden sm:hidden xsm:hidden"></div>
               <div className="w-[84%] h-full">
                 <div className="w-full h-full flex">
                   <NavItem
                     item="home"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs xsm:mr-2"
                   />
                   <NavItem
                     item="about"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs xsm:mr-2"
                   />
                   <NavItem
                     item="resume"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs xsm:mr-2"
                   />
                   <NavItem
                     item="projects"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs xsm:mr-2"
                   />
                   <NavItem
                     item="contact"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs xsm:mr-2"
                   />
                   {/* <NavItem
                     item="blog"
