@@ -24,10 +24,10 @@ const Header: FC = () => {
       {/* main header */}
       <header
         id="header"
-        className={`w-screen h-48 2xl:h-48 xl:h-44 lg:h-40 md:h-36 sm:h-32 bg-lightBlack`}
+        className={`w-screen h-48 2xl:h-48 xl:h-44 lg:h-40 md:h-36 sm:h-32 xsm:h-28 bg-lightBlack`}
         ref={headerSection}
       >
-        <div className="w-[70%] 2xl:w-[70%] xl:w-[75%] lg:w-[80%] md:w-[85%] sm:w-[90%] h-full m-auto">
+        <div className="w-[70%] 2xl:w-[70%] xl:w-[75%] lg:w-[80%] md:w-[85%] sm:w-[90%] xsm:w-[95%] h-full m-auto">
           {/* logo section */}
           <div className="w-full h-[80%]">
             <div className="w-full h-full flex">

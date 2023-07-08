@@ -17,6 +17,9 @@ module.exports = {
       backgroundImage: {
         'profile': "url('/public/images/profile.svg')",
       },
+      screens: {
+        'xsm': '400px',
+      }
     },
   },
   plugins: [],
