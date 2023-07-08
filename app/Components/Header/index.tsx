@@ -48,7 +48,7 @@ const Header: FC = () => {
               </div>
               <div className="w-[84%] h-full">
                 <div className="w-full h-full flex items-center">
-                  <p className="text-primaryGold text-5xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl">
+                  <p className="text-primaryGold text-5xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl xsm:text-lg">
                     anjana784
                   </p>
                 </div>
