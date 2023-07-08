@@ -99,13 +99,13 @@ const Header: FC = () => {
 
       {/* skicky header */}
       {!headerShowing && (
-        <header className="w-screen h-24 2xl:h-24 xl:h-20 lg:h-16 bg-lightBlack fixed top-0 left-0">
-          <div className="w-[70%] 2xl:w-[70%] xl:w-[75%] lg:w-[80%] !h-full m-auto">
-            <div className="w-full h-24 2xl:h-24 xl:h-20 lg:h-16 flex">
+        <header className="w-screen h-24 2xl:h-24 xl:h-20 lg:h-16 md:h-12 sm:h-12 xsm:h-12 bg-lightBlack fixed top-0 left-0">
+          <div className="w-[70%] 2xl:w-[70%] xl:w-[75%] lg:w-[80%] md:w-[85%] sm:w-[90%] xsm:w-[95%] !h-full m-auto">
+            <div className="w-full h-24 2xl:h-24 xl:h-20 lg:h-16 md:h-12 sm:h-12 xsm:h-12 flex">
               {/* logo section */}
               <div className="w-[16%] h-full">
                 <div className="w-full h-full flex justify-center items-center">
-                  <div className="w-20 h-20 2xl:w-16 2xl:h-16 xl:w-14 xl:h-14 lg:w-12 lg:h-12 bg-[#393737] rounded-full">
+                  <div className="w-20 h-20 2xl:w-16 2xl:h-16 xl:w-14 xl:h-14 lg:w-12 lg:h-12 md:w-8 md:h-8 sm:w-8 sm:h-8 xsm:w-8 xsm:h-8 bg-[#393737] rounded-full">
                     <div
                       style={{
                         width: "100%",
@@ -124,32 +124,32 @@ const Header: FC = () => {
                   <NavItem
                     item="home"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-lg 2xl:text-lg xl:text-base lg:text-sm"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
                   />
                   <NavItem
                     item="about"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-lg 2xl:text-lg xl:text-base lg:text-sm"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
                   />
                   <NavItem
                     item="resume"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-lg 2xl:text-lg xl:text-base lg:text-sm"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
                   />
                   <NavItem
                     item="projects"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-lg 2xl:text-lg xl:text-base lg:text-sm"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
                   />
                   <NavItem
                     item="contact"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-lg 2xl:text-lg xl:text-base lg:text-sm"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
                   />
                   {/* <NavItem
-                      item="blog"
-                      currentSectionName={currentSectionName}
-                    /> */}
+                    item="blog"
+                    currentSectionName={currentSectionName}
+                  /> */}
                 </nav>
               </div>
             </div>
