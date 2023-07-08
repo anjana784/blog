@@ -57,13 +57,13 @@ const Main: FC = () => {
   }, [currentSectionName]);
 
   return (
-    <main className="bg-lightBlack w-[70%] max-lg:w-[75%] max-md:w-[80%] rounded-md m-auto my-4">
+    <main className="bg-lightBlack w-[70%] 2xl:w-[70%] xl:w-[75%] lg:w-[80%] rounded-md m-auto my-4">
       <Home />
       <About />
       <Resume />
       <Projects />
       <Contact />
-      <Blog />
+      {/* <Blog /> */}
     </main>
   );
 };

@@ -24,16 +24,16 @@ const Header: FC = () => {
       {/* main header */}
       <header
         id="header"
-        className={`w-screen h-[200px] max-lg:h-[150px] max-md:h-[100px] bg-lightBlack `}
+        className={`w-screen h-48 2xl:h-48 xl:h-44 lg:h-40 bg-lightBlack`}
         ref={headerSection}
       >
-        <div className="w-[70%] max-lg:w-[70%] max-md:w-[80%] h-full m-auto">
+        <div className="w-[70%] 2xl:w-[70%] xl:w-[75%] lg:w-[80%] h-full m-auto">
           {/* logo section */}
           <div className="w-full h-[80%]">
             <div className="w-full h-full flex">
-              <div className="w-[20%] h-full">
+              <div className="w-[16%] h-full">
                 <div className="w-full h-full flex justify-center items-center">
-                  <div className="w-32 h-32 max-lg:w-28 max-lg:h-28 max-md:w-16 max-md:h-16 bg-customGray rounded-full">
+                  <div className="w-32 h-32 2xl:w-32 2xl:h-32 xl:w-28 xl:h-28 lg:w-24 lg:h-24 bg-customGray rounded-full">
                     <div
                       style={{
                         width: "100%",
@@ -48,7 +48,7 @@ const Header: FC = () => {
               </div>
               <div className="w-[84%] h-full">
                 <div className="w-full h-full flex items-center">
-                  <p className="text-primaryGold text-5xl max-lg:text-4xl px-4 max-lg:px-3 max-md:text-2xl max-md:px-0">
+                  <p className="text-primaryGold text-5xl 2xl:text-5xl xl:text-4xl lg:text-3xl">
                     anjana784
                   </p>
                 </div>
@@ -58,33 +58,38 @@ const Header: FC = () => {
           {/* Nav Bar section */}
           <nav className="w-full h-[20%]">
             <div className="w-full h-full flex">
-              <div className="w-[16%] h-full max-md:hidden"></div>
-              <div className="w-[84%] h-full max-md:px-3">
+              <div className="w-[16%] h-full"></div>
+              <div className="w-[84%] h-full">
                 <div className="w-full h-full flex">
                   <NavItem
                     item="home"
                     currentSectionName={currentSectionName}
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base"
                   />
                   <NavItem
                     item="about"
                     currentSectionName={currentSectionName}
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base"
                   />
                   <NavItem
                     item="resume"
                     currentSectionName={currentSectionName}
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base"
                   />
                   <NavItem
                     item="projects"
                     currentSectionName={currentSectionName}
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base"
                   />
                   <NavItem
                     item="contact"
                     currentSectionName={currentSectionName}
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base"
                   />
-                  <NavItem
+                  {/* <NavItem
                     item="blog"
                     currentSectionName={currentSectionName}
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
@@ -94,55 +99,57 @@ const Header: FC = () => {
 
       {/* skicky header */}
       {!headerShowing && (
-        <header className="w-screen h-[100px] max-lg:h-[75px] max-md:[50px] bg-lightBlack fixed top-0 left-0">
-          <div className="w-[70%] max-lg:w-[75%] max-md:[80%] h-full m-auto">
-            <div className="w-full h-full">
-              <div className="w-full h-full flex">
-                {/* logo section */}
-                <div className="w-[16%] h-full">
-                  <div className="w-full h-full flex justify-center items-center">
-                    <div className="w-20 h-20 max-lg:w-14 max-lg:h-14 max-md:w-12 max-md:h-12 bg-[#393737] rounded-full">
-                      <div
-                        style={{
-                          width: "100%",
-                          height: "100%",
-                          backgroundImage: `url(/images/profile.svg)`,
-                          backgroundSize: "cover",
-                          borderRadius: "50%",
-                        }}
-                      ></div>
-                    </div>
+        <header className="w-screen h-24 2xl:h-24 xl:h-20 lg:h-16 bg-lightBlack fixed top-0 left-0">
+          <div className="w-[70%] 2xl:w-[70%] xl:w-[75%] lg:w-[80%] !h-full m-auto">
+            <div className="w-full h-24 2xl:h-24 xl:h-20 lg:h-16 flex">
+              <div className="w-[16%] h-full">
+                <div className="w-full h-full flex justify-center items-center">
+                  <div className="w-20 h-20 2xl:w-16 2xl:h-16 xl:w-14 xl:h-14 lg:w-12 lg:h-12 bg-[#393737] rounded-full">
+                    <div
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        backgroundImage: `url(/images/profile.svg)`,
+                        backgroundSize: "cover",
+                        borderRadius: "50%",
+                      }}
+                    ></div>
                   </div>
                 </div>
-                {/* navbar section */}
-                <div className="w-[84%] h-full">
-                  <nav className="w-full flex items-end h-full">
-                    <NavItem
-                      item="home"
-                      currentSectionName={currentSectionName}
-                    />
-                    <NavItem
-                      item="about"
-                      currentSectionName={currentSectionName}
-                    />
-                    <NavItem
-                      item="resume"
-                      currentSectionName={currentSectionName}
-                    />
-                    <NavItem
-                      item="projects"
-                      currentSectionName={currentSectionName}
-                    />
-                    <NavItem
-                      item="contact"
-                      currentSectionName={currentSectionName}
-                    />
-                    <NavItem
+              </div>
+              {/* navbar section */}
+              <div className="w-[84%] h-full">
+                <nav className="w-full flex items-end h-full">
+                  <NavItem
+                    item="home"
+                    currentSectionName={currentSectionName}
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-lg 2xl:text-lg xl:text-base lg:text-sm"
+                  />
+                  <NavItem
+                    item="about"
+                    currentSectionName={currentSectionName}
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-lg 2xl:text-lg xl:text-base lg:text-sm"
+                  />
+                  <NavItem
+                    item="resume"
+                    currentSectionName={currentSectionName}
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-lg 2xl:text-lg xl:text-base lg:text-sm"
+                  />
+                  <NavItem
+                    item="projects"
+                    currentSectionName={currentSectionName}
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-lg 2xl:text-lg xl:text-base lg:text-sm"
+                  />
+                  <NavItem
+                    item="contact"
+                    currentSectionName={currentSectionName}
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 text-lg 2xl:text-lg xl:text-base lg:text-sm"
+                  />
+                  {/* <NavItem
                       item="blog"
                       currentSectionName={currentSectionName}
-                    />
-                  </nav>
-                </div>
+                    /> */}
+                </nav>
               </div>
             </div>
           </div>

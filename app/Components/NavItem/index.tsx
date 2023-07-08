@@ -5,9 +5,10 @@ import { FC } from "react";
 interface Props {
   currentSectionName: string;
   item: string;
+  className?: string;
 }
 
-const NavItem: FC<Props> = ({ currentSectionName, item }) => {
+const NavItem: FC<Props> = ({ currentSectionName, item, className }) => {
   const sections = useStore((state) => state.sections);
 
   const clickHandler = () => {
@@ -17,11 +18,11 @@ const NavItem: FC<Props> = ({ currentSectionName, item }) => {
   return (
     <Link
       href={`#${item}`}
-      className="flex justify-center items-center mr-6 max-lg:mr-4 max-md:mr-4 h-full"
+      className="flex justify-center items-center h-full"
       onClick={clickHandler}
     >
       <p
-        className={`text-primaryWhite text-xl max-lg:text-lg max-md:text-sm w-full capitalize ${
+        className={`text-primaryWhite ${className} w-full capitalize ${
           currentSectionName === item
             ? " border-b-solid border-b-[2px] border-b-primaryGold"
             : null
