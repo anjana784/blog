@@ -28,6 +28,7 @@ const NavItem: FC<Props> = ({ currentSectionName, item, className }) => {
             : null
         }`}
       >
+        {/* <span className="text-primaryGold">#/</span> */}
         {item}
       </p>
     </Link>
