@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.index-module_type__E-SaG::after {
+  content: "_" !important;
+}
