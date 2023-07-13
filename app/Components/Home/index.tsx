@@ -38,7 +38,7 @@ const Home: FC = () => {
                 {startHome && (
                   <>
                     <motion.h2
-                      className="text-primaryWhite mt-4 w-full 2xl:w-full xl:w-full lg:w-full md:w-3/5 sm:w-3/5 xsm:w-3/5"
+                      className="text-primaryWhite mt-4 w-full 2xl:w-full xl:w-full lg:w-full md:w-4/5 sm:w-4/5 xsm:w-4/5"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 2, delay: 1 }}
@@ -52,7 +52,7 @@ const Home: FC = () => {
                       Section.
                     </motion.h2>
                     <motion.div
-                      className="h-16 flex justify-between mt-8 w-2/5 2xl:w-2/5 xl:w-2/5 lg:w-2/5 md:w-1/3 sm:w-1/3 xsm:w-1/3"
+                      className="h-16 flex justify-between mt-8 w-2/5 2xl:w-2/5 xl:w-2/5 lg:w-2/5 md:w-1/3 sm:w-1/3 xsm:w-1/2"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 2, delay: 1 }}
