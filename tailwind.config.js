@@ -9,7 +9,7 @@ module.exports = {
     colors: {
       darkBlack: '#1C1E21',
       lightBlack: '#242526',
-      primaryGold: '#F2AE1B',
+      primaryGold: '#CDA434',
       primaryWhite: '#D3D3D3',
       customGray: '#393939'
     },

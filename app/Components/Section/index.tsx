@@ -22,7 +22,11 @@ const Section: FC<Props> = ({ title, children, id }) => {
   }, [setSections]);
 
   return (
-    <section className="h-[700px] pt-[110px]" id={id} ref={section}>
+    <section
+      className="min-h-[700px] p-24 2xl:p-24 xl:p-20 lg:p-16 md:p-12 sm:p-8 xsm:p-4 bg-lightBlack"
+      id={id}
+      ref={section}
+    >
       {title && <SectionTitile title={title} />}
       <SectionContent>{children}</SectionContent>
     </section>
