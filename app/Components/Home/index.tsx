@@ -36,25 +36,35 @@ const Home: FC = () => {
                   />
                 </h1>
                 {startHome && (
-                  <motion.h2
-                    className="text-primaryWhite mt-4 w-4/5 2xl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-3/5 sm:w-2/5"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                  >
-                    A Professional Full-Stack Web and Mobile Application
-                    Developer, Experienced in Trending and Latest JavaScript
-                    Technologies. Curious to Know More? Jump into the About
-                    Section.
-                  </motion.h2>
+                  <>
+                    <motion.h2
+                      className="text-primaryWhite mt-4 w-full 2xl:w-full xl:w-full lg:w-full md:w-3/5 sm:w-3/5 xsm:w-3/5"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 2, delay: 1 }}
+                    >
+                      A Professional Full-Stack Web and Mobile Application
+                      Developer, Experienced in Trending and Latest JavaScript
+                      Technologies. Curious to Know More? Jump into the{" "}
+                      <span className="font-semibold border-b-[2px] border-solid cursor-pointer border-primaryGold">
+                        About
+                      </span>{" "}
+                      Section.
+                    </motion.h2>
+                    <motion.div
+                      className="h-16 flex justify-between mt-8 w-2/5 2xl:w-2/5 xl:w-2/5 lg:w-2/5 md:w-1/3 sm:w-1/3 xsm:w-1/3"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 2, delay: 1 }}
+                    >
+                      <FaFacebookSquare className="text-primaryWhite text-2xl 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-lg xsm:text-lg" />
+                      <FaTwitter className="text-primaryWhite text-2xl 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-lg xsm:text-lg" />
+                      <FaInstagramSquare className="text-primaryWhite text-2xl 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-lg xsm:text-lg" />
+                      <FaLinkedin className="text-primaryWhite text-2xl 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-lg xsm:text-lg" />
+                      <FaGithub className="text-primaryWhite text-2xl 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-lg xsm:text-lg" />
+                    </motion.div>
+                  </>
                 )}
-                {/* <div className="h-16 flex justify-between mt-2 w-2/5">
-                  <FaFacebookSquare className="text-primaryWhite text-2xl 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-lg xsm:text-lg" />
-                  <FaTwitter className="text-primaryWhite text-2xl 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-lg xsm:text-lg" />
-                  <FaInstagramSquare className="text-primaryWhite text-2xl 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-lg xsm:text-lg" />
-                  <FaLinkedin className="text-primaryWhite text-2xl 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-lg xsm:text-lg" />
-                  <FaGithub className="text-primaryWhite text-2xl 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-lg xsm:text-lg" />
-                </div> */}
               </div>
             </div>
             <div className="w-full h-full 2xl:w-1/2 xl:w-1/2 lg:w-1/2 flex justify-center items-center"></div>
