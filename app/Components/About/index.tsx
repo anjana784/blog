@@ -16,7 +16,7 @@ const About: FC = () => {
             />
           </div> */}
           <div className="w-full h-full flex justify-center items-center">
-            <p className="text-primaryWhite">
+            <p className="text-primaryWhite text-xl 2xl:text-xl xl:text-xl lg:text-xl md:text-lg sm:text-base xsm:text-base">
               Hello again! You&apos;ve met me as a developer in the Home
               section, but let&apos;s delve a bit deeper. I&apos;m Anjana,
               hailing from Sri Lanka, and I started my coding journey as a

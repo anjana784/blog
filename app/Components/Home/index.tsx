@@ -38,7 +38,7 @@ const Home: FC = () => {
                 {startHome && (
                   <>
                     <motion.h2
-                      className="text-primaryWhite mt-4 w-full 2xl:w-full xl:w-full lg:w-full md:w-4/5 sm:w-4/5 xsm:w-4/5 text-lg 2xl:text-lg xl:text-lg lg:text-lg md:text-base sm:text-base xsm:text-base"
+                      className="text-primaryWhite mt-4 w-full 2xl:w-full xl:w-full lg:w-full md:w-4/5 sm:w-4/5 xsm:w-4/5 text-lg 2xl:text-lg xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 2, delay: 1 }}
