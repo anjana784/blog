@@ -22,7 +22,7 @@ const NavItem: FC<Props> = ({ currentSectionName, item, className }) => {
       onClick={clickHandler}
     >
       <p
-        className={`text-primaryWhite ${className} w-full capitalize ${
+        className={`text-primaryWhite ${className} w-full  ${
           currentSectionName === item
             ? " border-b-solid border-b-[2px] border-b-primaryGold"
             : null
