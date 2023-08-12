@@ -56,7 +56,7 @@ const Header: FC = () => {
             </div>
           </div>
           {/* Nav Bar section */}
-          <nav className="w-full h-[20%] 2xl:p-0 xl:p-0 lg:p-0 md:pl-4 sm:pl-4 xsm:pl-4">
+          <nav className="w-full h-[20%] 2xl:p-0 xl:p-0 lg:p-0 md:pl-4 sm:pl-4 xsm:pl-2">
             <div className="w-full h-full flex">
               <div className="w-[16%] h-full 2xl:block xl:block lg:block md:hidden sm:hidden xsm:hidden"></div>
               <div className="w-[84%] h-full">
@@ -64,22 +64,22 @@ const Header: FC = () => {
                   <NavItem
                     item="about"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-3 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
                   />
                   <NavItem
                     item="resume"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-3 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
                   />
                   <NavItem
                     item="projects"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-3 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
                   />
                   <NavItem
                     item="contact"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-3 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
                   />
                   {/* <NavItem
                     item="blog"
