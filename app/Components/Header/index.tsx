@@ -33,7 +33,7 @@ const Header: FC = () => {
             <div className="w-full h-full flex">
               <div className="w-[16%] h-full">
                 <div className="w-full h-full flex justify-center items-center">
-                  <div className="w-32 h-32 2xl:w-32 2xl:h-32 xl:w-28 xl:h-28 lg:w-24 lg:h-24 md:w-20 md:h-20 sm:w-16 sm:h-16 xsm:w-12 xsm:h-12 bg-customGray rounded-full">
+                  <div className="w-32 h-32 2xl:w-32 2xl:h-32 xl:w-28 xl:h-28 lg:w-24 lg:h-24 md:w-20 md:h-20 sm:w-16 sm:h-16 xsm:w-10 xsm:h-10 bg-customGray rounded-full">
                     <div
                       style={{
                         width: "100%",
@@ -48,7 +48,7 @@ const Header: FC = () => {
               </div>
               <div className="w-[84%] h-full">
                 <div className="w-full h-full flex items-center">
-                  <p className="text-primaryGold text-5xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl xsm:text-xl">
+                  <p className="text-primaryGold text-5xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl xsm:text-lg">
                     anjana784
                   </p>
                 </div>
@@ -61,11 +61,6 @@ const Header: FC = () => {
               <div className="w-[16%] h-full 2xl:block xl:block lg:block md:hidden sm:hidden xsm:hidden"></div>
               <div className="w-[84%] h-full">
                 <div className="w-full h-full flex">
-                  <NavItem
-                    item="home"
-                    currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
-                  />
                   <NavItem
                     item="about"
                     currentSectionName={currentSectionName}
@@ -121,11 +116,6 @@ const Header: FC = () => {
               {/* navbar section */}
               <div className="w-[84%] h-full">
                 <nav className="w-full flex items-end h-full">
-                  <NavItem
-                    item="home"
-                    currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
-                  />
                   <NavItem
                     item="about"
                     currentSectionName={currentSectionName}

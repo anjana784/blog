@@ -1,7 +1,7 @@
 "use client";
 import { FC, useEffect, useRef } from "react";
-import Home from "./Components/Home";
 import About from "./Components/About";
+// import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
@@ -58,7 +58,6 @@ const Main: FC = () => {
 
   return (
     <main className="bg-lightBlack w-[70%] 2xl:w-[70%] xl:w-[75%] lg:w-[80%] md:w-[85%] sm:w-[90%] xsm:w-[95%] rounded-md m-auto my-4">
-      <Home />
       <About />
       <Resume />
       <Projects />
