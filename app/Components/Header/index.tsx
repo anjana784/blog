@@ -64,22 +64,22 @@ const Header: FC = () => {
                   <NavItem
                     item="about"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-3 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-sm xsm:text-sm"
                   />
                   <NavItem
                     item="resume"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-3 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-sm xsm:text-sm"
                   />
                   <NavItem
                     item="projects"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-3 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-sm xsm:text-sm"
                   />
                   <NavItem
                     item="contact"
                     currentSectionName={currentSectionName}
-                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-3 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-xs xsm:text-xs"
+                    className="mr-8 2xl:mr-8 xl:mr-6 lg:mr-4 xsm:mr-4 text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-sm xsm:text-sm"
                   />
                   {/* <NavItem
                     item="blog"
