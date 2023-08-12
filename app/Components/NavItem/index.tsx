@@ -24,7 +24,7 @@ const NavItem: FC<Props> = ({ currentSectionName, item, className }) => {
       <p
         className={`text-primaryWhite ${className} w-full  ${
           currentSectionName === item
-            ? " border-b-solid border-b-[2px] border-b-primaryGold"
+            ? " border-b-solid border-b-[2px] 2xl:border-b-[2px] xl:border-b-[2px] md:border-b-[2px] sm:border-b-[1px] xsm:border-b-[1px] border-b-primaryGold"
             : null
         }`}
       >
