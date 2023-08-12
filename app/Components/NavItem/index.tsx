@@ -18,7 +18,7 @@ const NavItem: FC<Props> = ({ currentSectionName, item, className }) => {
   return (
     <Link
       href={`#${item}`}
-      className="flex justify-center items-center h-full"
+      className="flex justify-center items-center h-full capitalize"
       onClick={clickHandler}
     >
       <p
