@@ -43,13 +43,8 @@ const About: FC = () => {
                       animate={{ opacity: 1 }}
                       transition={{ duration: 2, delay: 0 }}
                     >
-                      A Professional Full-Stack Web and Mobile Application
-                      Developer, Experienced in Trending and Latest JavaScript
-                      Technologies. Curious to Know More? Jump into the{" "}
-                      <span className="font-semibold border-b-[2px] border-solid cursor-pointer border-primaryGold">
-                        About
-                      </span>{" "}
-                      Section.
+                      Passionate Full-Stack Developer and Tech Enthusiast |
+                      Transforming Ideas into Digital Reality
                     </motion.h2>
                     <motion.div
                       className="h-16 flex justify-between mt-8 w-56 2xl:w-56 xl:w-64 lg:w-64 md:w-56 sm:w-48 xsm:w-40"
