@@ -10,7 +10,7 @@ const sourceCodePro = Source_Code_Pro({
 });
 
 export const metadata = {
-  title: "anjana784",
+  title: "anjana784 - A Full Stack Developer",
   description: "Freelance Web Developer",
 };
 
