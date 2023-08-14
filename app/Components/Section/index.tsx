@@ -27,6 +27,7 @@ const Section: FC<Props> = ({ title, children, id }) => {
       id={id}
       ref={section}
     >
+      <div className="w-full hidden 2xl:hidden xl:block xl:h-4 lg:block lg:h-8 md:block md:h-8 sm:block sm:h-8 xsm:block xsm:h-12"></div>
       {title && <SectionTitile title={title} />}
       <SectionContent>{children}</SectionContent>
     </section>
