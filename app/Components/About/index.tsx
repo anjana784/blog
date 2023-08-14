@@ -43,7 +43,7 @@ const About: FC = () => {
                       animate={{ opacity: 1 }}
                       transition={{ duration: 2, delay: 0 }}
                     >
-                      Passionate Full-Stack Developer and Tech Enthusiast |
+                      A Passionate Full-Stack Developer and Tech Enthusiast,
                       Transforming Ideas into Digital Reality
                     </motion.h2>
                     <motion.div
