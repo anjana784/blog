@@ -24,16 +24,16 @@ const Header: FC = () => {
       {/* main header */}
       <header
         id="header"
-        className={`w-screen h-64 2xl:h-64 xl:h-52 lg:h-44 md:h-40 sm:h-32 xsm:h-28 bg-lightBlack border-b-[1px] border-b-solid border-b-customGray`}
+        className={`w-screen h-64 2xl:h-64 xl:h-52 lg:h-44 md:h-40 sm:h-32 xsm:h-28 bg-lightBlack border-b-[1px] border-b-solid border-b-customGray overflow-x-hidden`}
         ref={headerSection}
       >
         <div className="w-[70%] 2xl:w-[70%] xl:w-[75%] lg:w-[80%] md:w-[85%] sm:w-[90%] xsm:w-[95%] h-full m-auto">
           {/* logo section */}
           <div className="w-full h-[75%] ">
             <div className="w-full h-full flex">
-              <div className="w-32 2xl:w-32 xl:w-28 lg:w-24 md:w-20 sm:w-16 xsm:w-10 h-full">
+              <div className="w-36 2xl:w-36 xl:w-32 lg:w-28 md:w-24 sm:w-16 xsm:w-12 h-full">
                 <div className="w-full h-full flex justify-center items-center">
-                  <div className="w-32 h-32 2xl:w-32 2xl:h-32 xl:w-28 xl:h-28 lg:w-24 lg:h-24 md:w-20 md:h-20 sm:w-16 sm:h-16 xsm:w-10 xsm:h-10 bg-customGray rounded-full">
+                  <div className="w-36 h-36 2xl:w-36 2xl:h-36 xl:w-32 xl:h-32 lg:w-28 lg:h-28 md:w-24 md:h-24 sm:w-16 sm:h-16 xsm:w-12 xsm:h-12 bg-customGray rounded-full">
                     <div
                       style={{
                         width: "100%",
@@ -46,9 +46,9 @@ const Header: FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-[calc(100%_-_128px)] 2xl:w-[calc(100%_-_128px)] xl:w-[calc(100%_-_112px)] lg:w-[calc(100%_-_96px)] md:w-[calc(100%_-_80px)] sm:w-[calc(100%_-_64px)] xsm:w-[calc(100%_-_40px)] h-full pl-4">
-                <div className="w-full h-full flex items-center">
-                  <p className="text-primaryGold text-5xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl xsm:text-lg">
+              <div className="w-[calc(100%_-_144px)] 2xl:w-[calc(100%_-_144px)] xl:w-[calc(100%_-_128px)] lg:w-[calc(100%_-_112px)] md:w-[calc(100%_-_96px)] sm:w-[calc(100%_-_64px)] xsm:w-[calc(100%_-_48px)] h-full pl-4 flex justify-start items-center">
+                <div className="w-full h-32 2xl:h-32 xl:h-28 lg:h-24 md:h-20 sm:h-16 xsm:h-10  flex items-center">
+                  <p className="text-primaryGold text-5xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl xsm:text-xl">
                     anjana784
                   </p>
                 </div>

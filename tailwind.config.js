@@ -18,9 +18,16 @@ module.exports = {
         'profile': "url('/public/images/profile.svg')",
       },
       screens: {
-        'xsm': '300px',
+        'xsm': '320px',
       }
     },
   },
   plugins: [],
 }
+
+// 2xl: '1536px - 1920px',
+// xl: '1280px - 1535px',
+// lg: '1024px - 1279px',
+// md: '768px - 1023px',
+// sm: '640px - 767px',
+// xs: '320px - 639px',

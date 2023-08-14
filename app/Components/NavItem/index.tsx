@@ -18,7 +18,7 @@ const NavItem: FC<Props> = ({ currentSectionName, item, className }) => {
   return (
     <Link
       href={`#${item}`}
-      className={`flex justify-center items-center h-full capitalize px-4 ${
+      className={`flex justify-center items-center h-full capitalize px-4 2xl:px-4 xl:px-4 md:px-4 ${
         currentSectionName === item
           ? " border-b-solid border-b-[2px] 2xl:border-b-[2px] xl:border-b-[2px] md:border-b-[2px] sm:border-b-[1px] xsm:border-b-[1px] border-b-primaryGold"
           : null

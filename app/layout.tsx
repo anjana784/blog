@@ -11,7 +11,8 @@ const sourceCodePro = Source_Code_Pro({
 
 export const metadata = {
   title: "anjana784 - A Full Stack Developer",
-  description: "Freelance Web Developer",
+  description:
+    "Passionate Full-Stack Developer and Tech Enthusiast | Transforming Ideas into Digital Reality",
 };
 
 export default function RootLayout({
