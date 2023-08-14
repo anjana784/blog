@@ -83,10 +83,6 @@ const Header: FC = () => {
                     currentSectionName={currentSectionName}
                     className=" text-xl 2xl:text-xl xl:text-lg lg:text-base md:text-sm sm:text-sm xsm:text-sm"
                   />
-                  {/* <NavItem
-                    item="blog"
-                    currentSectionName={currentSectionName}
-                  /> */}
                 </div>
               </div>
             </div>
@@ -100,9 +96,9 @@ const Header: FC = () => {
           <div className="w-[70%] 2xl:w-[70%] xl:w-[75%] lg:w-[80%] md:w-[85%] sm:w-[90%] xsm:w-[95%] !h-full m-auto">
             <div className="w-full h-24 2xl:h-24 xl:h-20 lg:h-16 md:h-12 sm:h-12 xsm:h-12 flex">
               {/* logo section */}
-              <div className="w-[16%] h-full">
+              <div className="w-16 2xl:w-16 xl:w-14 lg:w-12 md:w-8 sm:w-8 xsm:w-8 h-full">
                 <div className="w-full h-full flex justify-center items-center">
-                  <div className="w-20 h-20 2xl:w-16 2xl:h-16 xl:w-14 xl:h-14 lg:w-12 lg:h-12 md:w-8 md:h-8 sm:w-8 sm:h-8 xsm:w-8 xsm:h-8 bg-[#393737] rounded-full">
+                  <div className="w-16 h-16 2xl:w-16 2xl:h-16 xl:w-14 xl:h-14 lg:w-12 lg:h-12 md:w-8 md:h-8 sm:w-8 sm:h-8 xsm:w-8 xsm:h-8 bg-[#393737] rounded-full">
                     <div
                       style={{
                         width: "100%",
@@ -116,7 +112,7 @@ const Header: FC = () => {
                 </div>
               </div>
               {/* navbar section */}
-              <div className="w-[84%] h-full">
+              <div className="w-[calc(100%_-_64px)] 2xl:w-[calc(100%_-_64px)] xl:w-[calc(100%_-_56px)] lg:w-[calc(100%_-_48px)] md:w-[calc(100%_-_32px)] sm:w-[calc(100%_-_32px)] xsm:w-[calc(100%_-_32px)] h-full flex items-end">
                 <nav className="w-full flex items-end h-full">
                   <NavItem
                     item="about"
