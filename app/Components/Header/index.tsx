@@ -113,7 +113,7 @@ const Header: FC = () => {
               </div>
               {/* navbar section */}
               <div className="w-[calc(100%_-_64px)] 2xl:w-[calc(100%_-_64px)] xl:w-[calc(100%_-_56px)] lg:w-[calc(100%_-_48px)] md:w-[calc(100%_-_32px)] sm:w-[calc(100%_-_32px)] xsm:w-[calc(100%_-_32px)] h-full flex items-end">
-                <nav className="w-full flex items-end h-full">
+                <nav className="w-full flex items-end h-full pl-6 2xl:pl-6 xl:pl-6 lg:pl-4 md:pl-4 sm:pl-2 xsm:pl-2">
                   <NavItem
                     item="about"
                     currentSectionName={currentSectionName}
