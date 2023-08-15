@@ -18,7 +18,7 @@ const About: FC = () => {
 
   return (
     <Section id="about">
-      <div className="w-full  flex justify-center items-center">
+      <div className="w-full h-[400px]  flex justify-center items-center">
         <div className="w-full">
           <div className="w-full h-full flex 2xl:flex 2xl:flex-row 2xl:items-center xl:flex xl:flex-row xl:items-center lg:flex lg:flex-row lg:items-center md:flex-col sm:flex-col xsm:flex-col">
             <div className="w-full h-full 2xl:w-1/2 xl:w-1/2 lg:w-1/2 flex ">
@@ -77,7 +77,7 @@ const About: FC = () => {
               </div>
             </div>
             <div className="w-full h-full 2xl:w-1/2 xl:w-1/2 lg:w-1/2 flex justify-center items-center">
-              <Image src={heroImage} alt="anjana" className="w-full" />
+              {/* <Image src={heroImage} alt="anjana" className="w-full" /> */}
             </div>
           </div>
         </div>
