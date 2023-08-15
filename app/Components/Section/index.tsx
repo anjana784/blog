@@ -23,7 +23,7 @@ const Section: FC<Props> = ({ title, children, id }) => {
 
   return (
     <section
-      className="min-h-[700px] p-24 2xl:p-24 xl:p-20 lg:p-16 md:p-12 sm:p-8 xsm:p-4 bg-lightBlack"
+      className=" p-24 2xl:p-24 xl:p-20 lg:p-16 md:p-12 sm:p-8 xsm:p-4 bg-lightBlack"
       id={id}
       ref={section}
     >
