@@ -22,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-darkBlack ${sourceCodePro.className}`}>
+      <body
+        className={`bg-darkBlack ${sourceCodePro.className} overflow-x-hidden`}
+      >
         <Header />
         {children}
         <Footer />
